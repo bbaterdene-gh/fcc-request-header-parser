@@ -13,7 +13,7 @@ const port = process.env.PORT || 3000
 
 app.get('/api/whoami', (req, res) => {
   res.json({
-    ip: req.ip,
+    ipaddress: req.ip,
     language: req.headers['accept-language'],
     software: req.headers['user-agent'],
   })
